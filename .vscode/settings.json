@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "g10_map.sln"
+    "dotnet.defaultSolution": "g10_map_app_decoding_dialogue.sln"
 }
