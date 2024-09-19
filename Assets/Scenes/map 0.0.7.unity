@@ -209,7 +209,6 @@ GameObject:
   - component: {fileID: 13470464}
   - component: {fileID: 13470463}
   - component: {fileID: 13470465}
-  - component: {fileID: 13470466}
   m_Layer: 0
   m_Name: Japan Taiwan
   m_TagString: Untagged
@@ -330,21 +329,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &13470466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13470461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48ac3d03bc0875443ba4b36749940bed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sX: 0
-  sY: 0
-  sZ: 0
 --- !u!1 &14815693
 GameObject:
   m_ObjectHideFlags: 0
@@ -5820,7 +5804,6 @@ GameObject:
   - component: {fileID: 904707607}
   - component: {fileID: 904707606}
   - component: {fileID: 904707608}
-  - component: {fileID: 904707609}
   m_Layer: 0
   m_Name: Russia
   m_TagString: Untagged
@@ -5941,21 +5924,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
---- !u!114 &904707609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 904707604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48ac3d03bc0875443ba4b36749940bed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sX: 0
-  sY: 0
-  sZ: 0
 --- !u!1 &912123519
 GameObject:
   m_ObjectHideFlags: 0
@@ -12942,6 +12910,7 @@ GameObject:
   - component: {fileID: 8885162287861415367}
   - component: {fileID: 8885162287861415366}
   - component: {fileID: 8885162287861415365}
+  - component: {fileID: 8885162287861415368}
   m_Layer: 0
   m_Name: landmass image antarctica
   m_TagString: Untagged
@@ -13043,6 +13012,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8885162287861415364}
   m_CullTransparentMesh: 1
+--- !u!114 &8885162287861415368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8885162287861415364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ac3d03bc0875443ba4b36749940bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sX: 0
+  sY: 0
+  sZ: 0
 --- !u!1 &8950931407601594877
 GameObject:
   m_ObjectHideFlags: 0
