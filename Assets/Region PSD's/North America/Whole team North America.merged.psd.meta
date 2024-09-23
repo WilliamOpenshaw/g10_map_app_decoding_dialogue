@@ -76,17 +76,17 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   spriteImportData:
-  - name: 
+  - name: Whole team North America.merged_1
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 0
-      height: 0
+      width: 1124
+      height: 792
     spriteID: 
     spriteBone: []
     spriteOutline: []
@@ -106,11 +106,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1364
-      y: 4
-      width: 412
-      height: 531
-    spriteID: 13cfb37d73dfa214a9f098c00961403c
+      x: 4
+      y: 530
+      width: 207
+      height: 226
+    spriteID: 02ca9cea01ecf364f8d6288159341be9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -118,8 +118,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1364, y: 4}
-    spritePosition: {x: 115, y: 253}
+    uvTransform: {x: 4, y: 530}
+    spritePosition: {x: 216, y: 11}
   - name: Owen - America North America
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -129,9 +129,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1352
-      height: 883
-    spriteID: 2a0156d9cb3b9234099eb8496c8b2dc0
+      width: 539
+      height: 311
+    spriteID: 09fa3520c6ab32340b572ebe56c74684
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,7 +140,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-    spritePosition: {x: 99, y: 181}
+    spritePosition: {x: 151, y: 135}
   - name: canada-2704154_150
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -148,11 +148,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1364
-      y: 795
+      x: 551
+      y: 4
       width: 329
       height: 218
-    spriteID: 9d198caf035632440b1a6fc9313c8bc8
+    spriteID: 5f876f2aa32c8044c9a477e6e1296e45
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,8 +160,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1364, y: 795}
-    spritePosition: {x: 174, y: 700}
+    uvTransform: {x: 551, y: 4}
+    spritePosition: {x: 101, y: 449}
   - name: toronto-1872680_150
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -169,11 +169,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1784
-      y: 4
+      x: 774
+      y: 323
       width: 197
       height: 129
-    spriteID: 52a0376b17d9c484bac7e1e3fcf2a8d8
+    spriteID: a8eb51878447b8946ac0d95d96c722d1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -181,8 +181,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1784, y: 4}
-    spritePosition: {x: 456, y: 677}
+    uvTransform: {x: 774, y: 323}
+    spritePosition: {x: 383, y: 426}
   - name: woman-2896389_150
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -190,11 +190,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1784
-      y: 141
+      x: 219
+      y: 530
       width: 156
       height: 104
-    spriteID: a4665513fd5b6ac4b8cc7ea4aeca986c
+    spriteID: c91dae6b8a9eaef409b517d9623f24d4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -202,8 +202,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1784, y: 141}
-    spritePosition: {x: 457, y: 803}
+    uvTransform: {x: 219, y: 530}
+    spritePosition: {x: 384, y: 552}
   - name: alaska
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -211,11 +211,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1900
-      y: 795
+      x: 888
+      y: 4
       width: 96
       height: 78
-    spriteID: 4c7138bb4a2b9634b9a8b27cc4944185
+    spriteID: 172e1b49c117d1444ab6fa5b13a0315e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -223,8 +223,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1900, y: 795}
-    spritePosition: {x: 99, y: 802}
+    uvTransform: {x: 888, y: 4}
+    spritePosition: {x: 26, y: 551}
   - name: Layer 6
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -232,11 +232,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1701
-      y: 795
+      x: 575
+      y: 323
       width: 191
       height: 162
-    spriteID: 1e4398670d895134ca1b07e57f83a57c
+    spriteID: 5432b98683e8eb7428e87d77d220ea73
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -244,8 +244,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1701, y: 795}
-    spritePosition: {x: 612, y: 689}
+    uvTransform: {x: 575, y: 323}
+    spritePosition: {x: 539, y: 438}
   - name: Layer 7
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -253,11 +253,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1364
-      y: 543
+      x: 4
+      y: 323
       width: 563
-      height: 244
-    spriteID: d8d07c0e08438c24ea348cee027f0d40
+      height: 199
+    spriteID: 885240d5591407e41836db48a86df51c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -265,8 +265,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1364, y: 543}
-    spritePosition: {x: 614, y: 777}
+    uvTransform: {x: 4, y: 323}
+    spritePosition: {x: 541, y: 571}
   characterData:
     bones: []
     parts: []
@@ -282,7 +282,43 @@ ScriptedImporter:
     characterGroups: []
     pivot: {x: 0, y: 0}
     boneReadOnly: 0
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   mosaicLayers: 1
   characterMode: 1
   documentPivot: {x: 0, y: 0}
@@ -307,9 +343,9 @@ ScriptedImporter:
     spriteName: James Maxico
     isGroup: 0
     parentIndex: -1
-    spriteID: 13cfb37d73dfa214a9f098c00961403c
-    layerID: 46
-    mosaicPosition: {x: 1364, y: 4}
+    spriteID: 02ca9cea01ecf364f8d6288159341be9
+    layerID: 48
+    mosaicPosition: {x: 4, y: 530}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -317,7 +353,7 @@ ScriptedImporter:
     spriteName: Owen - America North America
     isGroup: 0
     parentIndex: -1
-    spriteID: 2a0156d9cb3b9234099eb8496c8b2dc0
+    spriteID: 09fa3520c6ab32340b572ebe56c74684
     layerID: 47
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
@@ -327,9 +363,9 @@ ScriptedImporter:
     spriteName: canada-2704154_150
     isGroup: 0
     parentIndex: -1
-    spriteID: 9d198caf035632440b1a6fc9313c8bc8
+    spriteID: 5f876f2aa32c8044c9a477e6e1296e45
     layerID: 38
-    mosaicPosition: {x: 1364, y: 795}
+    mosaicPosition: {x: 551, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -337,9 +373,9 @@ ScriptedImporter:
     spriteName: toronto-1872680_150
     isGroup: 0
     parentIndex: -1
-    spriteID: 52a0376b17d9c484bac7e1e3fcf2a8d8
+    spriteID: a8eb51878447b8946ac0d95d96c722d1
     layerID: 39
-    mosaicPosition: {x: 1784, y: 4}
+    mosaicPosition: {x: 774, y: 323}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -347,9 +383,9 @@ ScriptedImporter:
     spriteName: woman-2896389_150
     isGroup: 0
     parentIndex: -1
-    spriteID: a4665513fd5b6ac4b8cc7ea4aeca986c
+    spriteID: c91dae6b8a9eaef409b517d9623f24d4
     layerID: 40
-    mosaicPosition: {x: 1784, y: 141}
+    mosaicPosition: {x: 219, y: 530}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -357,9 +393,9 @@ ScriptedImporter:
     spriteName: alaska
     isGroup: 0
     parentIndex: -1
-    spriteID: 4c7138bb4a2b9634b9a8b27cc4944185
+    spriteID: 172e1b49c117d1444ab6fa5b13a0315e
     layerID: 41
-    mosaicPosition: {x: 1900, y: 795}
+    mosaicPosition: {x: 888, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -367,9 +403,9 @@ ScriptedImporter:
     spriteName: Layer 6
     isGroup: 0
     parentIndex: -1
-    spriteID: 1e4398670d895134ca1b07e57f83a57c
+    spriteID: 5432b98683e8eb7428e87d77d220ea73
     layerID: 43
-    mosaicPosition: {x: 1701, y: 795}
+    mosaicPosition: {x: 575, y: 323}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -377,9 +413,9 @@ ScriptedImporter:
     spriteName: Layer 7
     isGroup: 0
     parentIndex: -1
-    spriteID: d8d07c0e08438c24ea348cee027f0d40
+    spriteID: 885240d5591407e41836db48a86df51c
     layerID: 45
-    mosaicPosition: {x: 1364, y: 543}
+    mosaicPosition: {x: 4, y: 323}
     flatten: 0
     isImported: 1
     isVisible: 1
