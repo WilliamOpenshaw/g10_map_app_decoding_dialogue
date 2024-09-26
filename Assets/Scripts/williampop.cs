@@ -42,7 +42,7 @@ public class williampop : MonoBehaviour, IPointerEnterHandler,  IPointerExitHand
         Debug.Log("The cursor entered the selectable UI element.");
         
         //double the size of this object that the script is attached to
-        gameObject.transform.localScale = new Vector3(  sizeX * 24, sizeY * 24, sizeZ * 24 );
+        gameObject.transform.localScale = new Vector3(  sizeX * 2, sizeY * 2, sizeZ * 2 );
     }
 
     
