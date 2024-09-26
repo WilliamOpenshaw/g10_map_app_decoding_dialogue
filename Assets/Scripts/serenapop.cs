@@ -1,27 +1,49 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
+using UnityEngine.UI; // Required to change UI elements in Unity
+using UnityEngine.EventSystems; // Required when using Event data.
 
-public class serenapop : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
-{
-public float sX;
-public float sY;
-public float sZ;
-public void Start()
-{
-sX = gameObject.transform.localScale.x;
-sY = gameObject.transform.localScale.y;
-sZ = gameObject.transform.localScale.z;
-}
-{
-public float sX;
-public float sY;
-Debug.Log("The cursor EXITED the selectable UI element.");
-gameObject.transform.localScale = new Vector3( sX, sY, sZ );
-}
-public void OnPointerEnter(PointerEventData eventData)
-{
-Debug.Log("The cursor entered the selectable UI element.");
-gameObject.transform.localScale = new Vector3( sX * 2, sY * 2 , sZ * 2 );   
+
+//This is our script class
+public class serenapop : MonoBehaviour, IPointerEnterHandler,  IPointerExitHandler //required for mouse over effects
+{  
+    //create variable for sizeX
+    public float sizeX;
+    //create variable for sizeX
+    public float sizeY;
+    //create variable for sizeX
+    public float sizeZ;
+
+    //Do this once when program starts
+    public void Start()
+    {  
+        //save starting x size
+        sizeX = gameObject.transform.localScale.x;
+        //save starting y size
+        sizeY = gameObject.transform.localScale.y;
+        //save starting z size
+        sizeZ = gameObject.transform.localScale.z;
+    }
+
+    //Do this when the cursor exits the rect area of this selectable UI object.
+    public void OnPointerExit(PointerEventData eventData2)
+    {
+        //send a message to console if exit
+        Debug.Log("The cursor EXITED the selectable UI element.");
+
+        //double the size of this object that the script is attached to
+        gameObject.transform.localScale = new Vector3(  sizeX, sizeY, sizeZ );
+    }
+
+    //Do this when the cursor enters the rect area of this selectable UI object.
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        //send a message to console if enter
+        Debug.Log("The cursor entered the selectable UI element.");
+       
+        //double the size of this object that the script is attached to
+        gameObject.transform.localScale = new Vector3(  sizeX * 2, sizeY * 2, sizeZ * 2 );
+    }
+
+   
 }
