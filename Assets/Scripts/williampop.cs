@@ -1,18 +1,49 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required to change UI elements in Unity
+using UnityEngine.EventSystems; // Required when using Event data.
 
-public class williampop : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+
+//This is our script class
+public class williampop : MonoBehaviour, IPointerEnterHandler,  IPointerExitHandler //required for mouse over effects
+{   
+    //create variable for sizeX
+    public float sizeX;
+    //create variable for sizeX
+    public float sizeY;
+    //create variable for sizeX
+    public float sizeZ;
+
+    //Do this once when program starts
+    public void Start()
+    {   
+        //save starting x size
+        sizeX = gameObject.transform.localScale.x;
+        //save starting y size 
+        sizeY = gameObject.transform.localScale.y;
+        //save starting z size
+        sizeZ = gameObject.transform.localScale.z;
     }
 
-    // Update is called once per frame
-    void Update()
+    //Do this when the cursor exits the rect area of this selectable UI object.
+    public void OnPointerExit(PointerEventData eventData2)
     {
-        
+        //send a message to console if exit
+        Debug.Log("The cursor EXITED the selectable UI element.");
+
+        //double the size of this object that the script is attached to
+        gameObject.transform.localScale = new Vector3(  sizeX, sizeY, sizeZ );
     }
+
+    //Do this when the cursor enters the rect area of this selectable UI object.
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        //send a message to console if enter
+        Debug.Log("The cursor entered the selectable UI element.");
+        
+        //double the size of this object that the script is attached to
+        gameObject.transform.localScale = new Vector3(  sizeX * 24, sizeY * 24, sizeZ * 24 );
+    }
+
+    
 }
