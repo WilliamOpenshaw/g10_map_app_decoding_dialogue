@@ -452,6 +452,7 @@ GameObject:
   - component: {fileID: 110878503}
   - component: {fileID: 110878502}
   - component: {fileID: 110878504}
+  - component: {fileID: 110878505}
   m_Layer: 0
   m_Name: Russia
   m_TagString: Untagged
@@ -572,6 +573,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &110878505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110878500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538288faad337d4ba34df3ce9835294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeX: 0
+  sizeY: 0
+  sizeZ: 0
 --- !u!1 &122224780
 GameObject:
   m_ObjectHideFlags: 0
@@ -2858,6 +2874,8 @@ GameObject:
   - component: {fileID: 428024591}
   - component: {fileID: 428024590}
   - component: {fileID: 428024592}
+  - component: {fileID: 428024593}
+  - component: {fileID: 428024594}
   m_Layer: 0
   m_Name: MAUS (Germany)
   m_TagString: Untagged
@@ -2978,6 +2996,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &428024593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428024588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 005b4c29bef406e4186b861d59385ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeX: 0
+  sizeY: 0
+  sizeZ: 0
+--- !u!114 &428024594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428024588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538288faad337d4ba34df3ce9835294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeX: 0
+  sizeY: 0
+  sizeZ: 0
 --- !u!1 &447755768
 GameObject:
   m_ObjectHideFlags: 0
@@ -3062,7 +3110,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.9
+  m_fontSize: 24.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5975,7 +6023,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 732971167}
   m_Enabled: 1
   m_EditorHideFlags: 0
+
   m_Script: {fileID: 11500000, guid: 57d9a2f68a282bb488a3e6ceb70ff4c4, type: 3}
+
   m_Name: 
   m_EditorClassIdentifier: 
   sizeX: 0
@@ -7201,6 +7251,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 837119277}
   m_Enabled: 1
   m_EditorHideFlags: 0
+
   m_Script: {fileID: 11500000, guid: 7642833bf39724961bcf641235781757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -7372,7 +7423,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -22.900024, y: -10.789}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &871143948
@@ -10440,6 +10491,7 @@ GameObject:
   - component: {fileID: 1402597854}
   - component: {fileID: 1402597853}
   - component: {fileID: 1402597855}
+  - component: {fileID: 1402597856}
   m_Layer: 0
   m_Name: Baguette (France)
   m_TagString: Untagged
@@ -10560,6 +10612,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1402597856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402597851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7538288faad337d4ba34df3ce9835294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeX: 0
+  sizeY: 0
+  sizeZ: 0
 --- !u!1 &1403558463
 GameObject:
   m_ObjectHideFlags: 0
@@ -14174,7 +14241,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1890611494}
   m_Enabled: 1
   m_EditorHideFlags: 0
+
   m_Script: {fileID: 11500000, guid: 7642833bf39724961bcf641235781757, type: 3}
+
   m_Name: 
   m_EditorClassIdentifier: 
   sizeX: 0
