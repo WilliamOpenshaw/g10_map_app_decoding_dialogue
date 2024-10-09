@@ -641,7 +641,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &81455259
 RectTransform:
   m_ObjectHideFlags: 0
@@ -678,6 +678,8 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 6b9ffee3c730b37429eb384ed5f473b9, type: 2}
   - {fileID: 7400000, guid: 71ef8fdc9c0f29b4f9125aa2b8cbfc3f, type: 2}
+  - {fileID: 7400000, guid: ed2f1df030db3e147987f6ceeffeb6de, type: 2}
+  - {fileID: 7400000, guid: b7dc9d4a9ee549741adf6c2be5968702, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -9538,7 +9540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1345158848
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16460,7 +16462,7 @@ MonoBehaviour:
         m_MethodName: set_clip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 7400000, guid: 6b9ffee3c730b37429eb384ed5f473b9, type: 2}
+          m_ObjectArgument: {fileID: 7400000, guid: ed2f1df030db3e147987f6ceeffeb6de, type: 2}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AnimationClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
