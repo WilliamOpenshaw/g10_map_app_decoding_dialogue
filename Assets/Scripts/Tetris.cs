@@ -118,7 +118,7 @@ public class Tetris : MonoBehaviour
         long4.SetActive(false);
         zigzag4.SetActive(false);
 
-        startPos = new Vector2(46, 357); 
+        startPos = new Vector2(0, 0); 
 
         square0.GetComponent<RectTransform>().anchoredPosition = startPos;
         long0.GetComponent<RectTransform>().anchoredPosition = startPos;
@@ -148,12 +148,12 @@ public class Tetris : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.LeftArrow))
         {
             rect = shapes[choiceNumber].GetComponent<RectTransform>();
-            rect.anchoredPosition = new Vector2(rect.anchoredPosition.x - 30,rect.anchoredPosition.y);
+            rect.anchoredPosition = new Vector2(rect.anchoredPosition.x - 10,rect.anchoredPosition.y);
         }
         if(Input.GetKeyDown(KeyCode.RightArrow))
         {
             rect = shapes[choiceNumber].GetComponent<RectTransform>();
-            rect.anchoredPosition = new Vector2(rect.anchoredPosition.x + 30,rect.anchoredPosition.y);
+            rect.anchoredPosition = new Vector2(rect.anchoredPosition.x + 10,rect.anchoredPosition.y);
         }
         if(Time.time > lastTime + 5)
         {
