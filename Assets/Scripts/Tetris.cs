@@ -48,19 +48,27 @@ public class Tetris : MonoBehaviour
     public GameObject zigzag4Sentence;
     public GameObject zigzag4Sentence2;
 
+    //saved start position for shapes
     public Vector2 startPos; 
-
+    //saved number for random piece choosing
     public int choiceNumber = 0;
 
+    //saved time for checking how much time has gone by
     public float lastTime;
 
+    //saved yes/no true/false for when to keep making more pieces
     public bool keepSpawning;
 
+    //to count how many times a random choice has been tried
     public int tryNumber;
 
+    //list of shapes so we can call them by number instead of by name
     public GameObject[] shapes;
 
+    //to save the position controller for shapes
+    //so our code lines are shorter and easier to read
     public RectTransform rect;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -81,6 +89,7 @@ public class Tetris : MonoBehaviour
         shapes[13] = long4;
         shapes[14] = zigzag4;
 
+        //
         square0Sentence.GetComponent<TextMeshProUGUI>().text = "A";
         long0Sentence.GetComponent<TextMeshProUGUI>().text = "B";
         zigzag0Sentence.GetComponent<TextMeshProUGUI>().text = "C";
