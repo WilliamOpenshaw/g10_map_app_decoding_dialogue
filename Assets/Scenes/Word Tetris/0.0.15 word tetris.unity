@@ -1993,7 +1993,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 85.8
+  m_fontSize: 87.1
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4917,7 +4917,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21.7
+  m_fontSize: 26.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6091,7 +6091,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &547843737
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18602,12 +18602,12 @@ GameObject:
   - component: {fileID: 1789861301}
   - component: {fileID: 1789861300}
   m_Layer: 5
-  m_Name: Open Tetris Button
+  m_Name: Example Open Tetris Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1789861299
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19987,12 +19987,12 @@ GameObject:
   - component: {fileID: 1918899167}
   - component: {fileID: 1918899168}
   m_Layer: 5
-  m_Name: Tetris
+  m_Name: Example Tetris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1918899167
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20034,18 +20034,18 @@ MonoBehaviour:
   square0: {fileID: 2046746506}
   long0: {fileID: 576613958}
   zigzag0: {fileID: 1654868127}
-  square1: {fileID: 0}
-  long1: {fileID: 0}
-  zigzag1: {fileID: 0}
-  square2: {fileID: 0}
-  long2: {fileID: 0}
-  zigzag2: {fileID: 0}
-  square3: {fileID: 0}
-  long3: {fileID: 0}
-  zigzag3: {fileID: 0}
-  square4: {fileID: 0}
-  long4: {fileID: 0}
-  zigzag4: {fileID: 0}
+  square1: {fileID: 1734361511}
+  long1: {fileID: 1684828978}
+  zigzag1: {fileID: 976212305}
+  square2: {fileID: 1659493613}
+  long2: {fileID: 770023863}
+  zigzag2: {fileID: 1655900167}
+  square3: {fileID: 938552589}
+  long3: {fileID: 57708384}
+  zigzag3: {fileID: 1545984704}
+  square4: {fileID: 224865730}
+  long4: {fileID: 411989124}
+  zigzag4: {fileID: 1298907296}
   square0Sentence: {fileID: 1582262433}
   long0Sentence: {fileID: 1336447274}
   zigzag0Sentence: {fileID: 2060048395}
@@ -20073,6 +20073,7 @@ MonoBehaviour:
   tryNumber: 0
   shapes: []
   rect: {fileID: 0}
+  xPositionCheck: 0
 --- !u!1 &1923769752
 GameObject:
   m_ObjectHideFlags: 0
