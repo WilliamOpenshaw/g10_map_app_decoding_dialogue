@@ -68,10 +68,14 @@ public class Tetris : MonoBehaviour
     //to save the position controller for shapes
     //so our code lines are shorter and easier to read
     public RectTransform rect;
+
+    public float xPositionCheck;
     
-    // Start is called before the first frame update
+    // Everything in Start() happens one time at the beginning
     void Start()
     {
+        // These set our shapes into a numbered list that we can easily use
+        // to randomly call different shapes
         shapes = new GameObject[15];
         shapes[0] = square0;
         shapes[1] = long0;
@@ -89,17 +93,18 @@ public class Tetris : MonoBehaviour
         shapes[13] = long4;
         shapes[14] = zigzag4;
 
-        //
-        square0Sentence.GetComponent<TextMeshProUGUI>().text = "Someone dating at school";
-        long0Sentence.GetComponent<TextMeshProUGUI>().text = "teachers are also dating at school";
-        zigzag0Sentence.GetComponent<TextMeshProUGUI>().text = "Ha ha ha ha ha ha";
-        zigzag0Sentence2.GetComponent<TextMeshProUGUI>().text = "said by the teacher";
-        square1Sentence.GetComponent<TextMeshProUGUI>().text = "The school's gonna break down now";
-        long1Sentence.GetComponent<TextMeshProUGUI>().text = "Someone's eating ice-cream";
-        zigzag1Sentence.GetComponent<TextMeshProUGUI>().text = "Today is really sunny";
-        zigzag1Sentence2.GetComponent<TextMeshProUGUI>().text = "the sunshine is so bright";
-        square2Sentence.GetComponent<TextMeshProUGUI>().text = "The students say they are gonna save the school";
-        long2Sentence.GetComponent<TextMeshProUGUI>().text = " They studied hard and seperated all coupples";
+        //this is the text that needs to change
+        //The text here will appear in the pieces
+        square0Sentence.GetComponent<TextMeshProUGUI>().text = "A";
+        long0Sentence.GetComponent<TextMeshProUGUI>().text = "B";
+        zigzag0Sentence.GetComponent<TextMeshProUGUI>().text = "C";
+        zigzag0Sentence2.GetComponent<TextMeshProUGUI>().text = "D";
+        square1Sentence.GetComponent<TextMeshProUGUI>().text = "E";
+        long1Sentence.GetComponent<TextMeshProUGUI>().text = "F";
+        zigzag1Sentence.GetComponent<TextMeshProUGUI>().text = "G";
+        zigzag1Sentence2.GetComponent<TextMeshProUGUI>().text = "H";
+        square2Sentence.GetComponent<TextMeshProUGUI>().text = "I";
+        long2Sentence.GetComponent<TextMeshProUGUI>().text = "J";
         zigzag2Sentence.GetComponent<TextMeshProUGUI>().text = "K";
         zigzag2Sentence2.GetComponent<TextMeshProUGUI>().text = "L";
         square3Sentence.GetComponent<TextMeshProUGUI>().text = "M";
@@ -111,6 +116,7 @@ public class Tetris : MonoBehaviour
         zigzag4Sentence.GetComponent<TextMeshProUGUI>().text = "S";
         zigzag4Sentence2.GetComponent<TextMeshProUGUI>().text = "T";
 
+        // this makes all the pieces turned off at the beginning
         square0.SetActive(false);
         long0.SetActive(false);
         zigzag0.SetActive(false);
@@ -127,8 +133,14 @@ public class Tetris : MonoBehaviour
         long4.SetActive(false);
         zigzag4.SetActive(false);
 
+        //this is the start position of the falling blocks
+        //lets try it
+        //Let's movea piece and see what number we get
+        // a height of 364
         startPos = new Vector2(0, 0); 
 
+        // this sets teh location of all the pieces to the starting location
+        // so they can fall down when they appear 
         square0.GetComponent<RectTransform>().anchoredPosition = startPos;
         long0.GetComponent<RectTransform>().anchoredPosition = startPos;
         zigzag0.GetComponent<RectTransform>().anchoredPosition = startPos;
@@ -144,30 +156,61 @@ public class Tetris : MonoBehaviour
         square4.GetComponent<RectTransform>().anchoredPosition = startPos;
         long4.GetComponent<RectTransform>().anchoredPosition = startPos;
         zigzag4.GetComponent<RectTransform>().anchoredPosition = startPos;        
-
+        
+        //sets a start time to teh current time, so we can measure seconds passed
         lastTime = Time.time;
 
+        // sets the number of random piece trys to 0
+        // If there are to many tries, then we will skip
+        // generating random numbers, because we want to avoid
+        // the program running forever trying to pick a random number
         tryNumber = 0;
         keepSpawning = true;
     }
 
-    // Update is called once per frame
+    // Everything in update happens about 30 times a second
     void Update()
     {
+        // change from getkeydown to getkey
+        // this moves pieces every time a key is pressed
+        // let's change it to keep moving when you hold down the key
+        // that's it
+        //we need an if statement here
         if(Input.GetKeyDown(KeyCode.LeftArrow))
         {
+            //add if statement to stop it going out left side
+            // what number are we checking?
+            // -798           
             rect = shapes[choiceNumber].GetComponent<RectTransform>();
+            //change it to 5 to make it move slower
             rect.anchoredPosition = new Vector2(rect.anchoredPosition.x - 10,rect.anchoredPosition.y);
+            
         }
         if(Input.GetKeyDown(KeyCode.RightArrow))
         {
+            //add if statement to stop it going out right side
+            //What number do we need for the right side?
+            //let's check
+            //less than 795
             rect = shapes[choiceNumber].GetComponent<RectTransform>();
+            //change it to 5 to make it move slower
             rect.anchoredPosition = new Vector2(rect.anchoredPosition.x + 10,rect.anchoredPosition.y);
         }
+        // this is the spawn time of the next block
+        // if you set it to 3, a piece will appear every 3 seconds
+        // lets set it to 2, and see what happens
+        //we can make a new variable for this number called shapeSpawnWaitTime if we want it to be clearer
         if(Time.time > lastTime + 5)
         {
+            //resets time to wait
             lastTime = Time.time;
+
+            // choose a random shape to spawn
             choiceNumber = UnityEngine.Random.Range(0, 15);
+
+            // check if all shapes have appeared
+            //if all shapes on, then stop spawning shapes
+            // otherwise, keep spawning shapes
             if  (   shapes[0].activeSelf == true &&
                     shapes[1].activeSelf == true &&
                     shapes[2].activeSelf == true &&
@@ -191,10 +234,12 @@ public class Tetris : MonoBehaviour
             {
                 keepSpawning = true;
             }
+            // this while loop keeps choosing new numbers if the randomly chosen shape is already spawned
             while(shapes[choiceNumber].activeSelf == true && keepSpawning == true && tryNumber < 30)
             {
                 choiceNumber = UnityEngine.Random.Range(0, 15);
             }
+            // if the randomly chosen shape is not spawned yet, spawn it, turn it on
             if(shapes[choiceNumber].activeSelf == false && keepSpawning == true)
             {
                 shapes[choiceNumber].SetActive(true);
@@ -202,6 +247,8 @@ public class Tetris : MonoBehaviour
         }
     }
 
+    // this functon gets activated by the restart button
+    // it turns off all of the shapes and returns them back to their original position
     public void Restart()
     {
         square0.SetActive(false);
