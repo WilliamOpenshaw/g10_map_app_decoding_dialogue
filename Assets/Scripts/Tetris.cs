@@ -90,26 +90,26 @@ public class Tetris : MonoBehaviour
         shapes[14] = zigzag4;
 
         //
-        square0Sentence.GetComponent<TextMeshProUGUI>().text = "A";
-        long0Sentence.GetComponent<TextMeshProUGUI>().text = "B";
-        zigzag0Sentence.GetComponent<TextMeshProUGUI>().text = "C";
-        zigzag0Sentence2.GetComponent<TextMeshProUGUI>().text = "D";
-        square1Sentence.GetComponent<TextMeshProUGUI>().text = "E";
-        long1Sentence.GetComponent<TextMeshProUGUI>().text = "F";
-        zigzag1Sentence.GetComponent<TextMeshProUGUI>().text = "G";
-        zigzag1Sentence2.GetComponent<TextMeshProUGUI>().text = "H";
-        square2Sentence.GetComponent<TextMeshProUGUI>().text = "I";
-        long2Sentence.GetComponent<TextMeshProUGUI>().text = "J";
-        zigzag2Sentence.GetComponent<TextMeshProUGUI>().text = "K";
-        zigzag2Sentence2.GetComponent<TextMeshProUGUI>().text = "L";
-        square3Sentence.GetComponent<TextMeshProUGUI>().text = "M";
-        long3Sentence.GetComponent<TextMeshProUGUI>().text = "N";
-        zigzag3Sentence.GetComponent<TextMeshProUGUI>().text = "O";
-        zigzag3Sentence2.GetComponent<TextMeshProUGUI>().text = "P";
-        square4Sentence.GetComponent<TextMeshProUGUI>().text = "Q";
-        long4Sentence.GetComponent<TextMeshProUGUI>().text = "R";
-        zigzag4Sentence.GetComponent<TextMeshProUGUI>().text = "S";
-        zigzag4Sentence2.GetComponent<TextMeshProUGUI>().text = "T";
+        square0Sentence.GetComponent<TextMeshProUGUI>().text = "He love banana";
+        long0Sentence.GetComponent<TextMeshProUGUI>().text = "He ate banana";
+        zigzag0Sentence.GetComponent<TextMeshProUGUI>().text = "He choked";
+        zigzag0Sentence2.GetComponent<TextMeshProUGUI>().text = "on the banana";
+        square1Sentence.GetComponent<TextMeshProUGUI>().text = "He now hate banana";
+        long1Sentence.GetComponent<TextMeshProUGUI>().text = "He now love apple";
+        zigzag1Sentence.GetComponent<TextMeshProUGUI>().text = "He choked";
+        zigzag1Sentence2.GetComponent<TextMeshProUGUI>().text = "on an apple";
+        square2Sentence.GetComponent<TextMeshProUGUI>().text = "Now he hate apples";
+        long2Sentence.GetComponent<TextMeshProUGUI>().text = "He threw apples into the bin";
+        zigzag2Sentence.GetComponent<TextMeshProUGUI>().text = "The apples";
+        zigzag2Sentence2.GetComponent<TextMeshProUGUI>().text = "starts flying";
+        square3Sentence.GetComponent<TextMeshProUGUI>().text = "He got scared";
+        long3Sentence.GetComponent<TextMeshProUGUI>().text = "He fought the apple";
+        zigzag3Sentence.GetComponent<TextMeshProUGUI>().text = "The apple pulled";
+        zigzag3Sentence2.GetComponent<TextMeshProUGUI>().text = "out a sword";
+        square4Sentence.GetComponent<TextMeshProUGUI>().text = "He died";
+        long4Sentence.GetComponent<TextMeshProUGUI>().text = "apple is happy";
+        zigzag4Sentence.GetComponent<TextMeshProUGUI>().text = "Banana is";
+        zigzag4Sentence2.GetComponent<TextMeshProUGUI>().text = "very sad";
 
         square0.SetActive(false);
         long0.SetActive(false);
