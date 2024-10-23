@@ -11,7 +11,7 @@ using UnityEngine;
 
 public class Tetris : MonoBehaviour
 {
-    public GameObject square0;
+    public GameObject square0;ㄧ
     public GameObject long0;
     public GameObject zigzag0;
     public GameObject square1;
@@ -90,16 +90,16 @@ public class Tetris : MonoBehaviour
         shapes[14] = zigzag4;
 
         //
-        square0Sentence.GetComponent<TextMeshProUGUI>().text = "A";
-        long0Sentence.GetComponent<TextMeshProUGUI>().text = "B";
-        zigzag0Sentence.GetComponent<TextMeshProUGUI>().text = "C";
-        zigzag0Sentence2.GetComponent<TextMeshProUGUI>().text = "D";
-        square1Sentence.GetComponent<TextMeshProUGUI>().text = "E";
-        long1Sentence.GetComponent<TextMeshProUGUI>().text = "F";
-        zigzag1Sentence.GetComponent<TextMeshProUGUI>().text = "G";
-        zigzag1Sentence2.GetComponent<TextMeshProUGUI>().text = "H";
-        square2Sentence.GetComponent<TextMeshProUGUI>().text = "I";
-        long2Sentence.GetComponent<TextMeshProUGUI>().text = "J";
+        square0Sentence.GetComponent<TextMeshProUGUI>().text = "Joshua flied";
+        long0Sentence.GetComponent<TextMeshProUGUI>().text = "Maira start to sleep";
+        zigzag0Sentence.GetComponent<TextMeshProUGUI>().text = "The cat eats";
+        zigzag0Sentence2.GetComponent<TextMeshProUGUI>().text = "the fish";
+        square1Sentence.GetComponent<TextMeshProUGUI>().text = "Can I have more?";
+        long1Sentence.GetComponent<TextMeshProUGUI>().text = "The cat asked";
+        zigzag1Sentence.GetComponent<TextMeshProUGUI>().text = "I want more fish";
+        zigzag1Sentence2.GetComponent<TextMeshProUGUI>().text = "because I'm hungry";
+        square2Sentence.GetComponent<TextMeshProUGUI>().text = "I want to have more!!";
+        long2Sentence.GetComponent<TextMeshProUGUI>().text = "Since the cat is hungry, it gets two more fish";
         zigzag2Sentence.GetComponent<TextMeshProUGUI>().text = "K";
         zigzag2Sentence2.GetComponent<TextMeshProUGUI>().text = "L";
         square3Sentence.GetComponent<TextMeshProUGUI>().text = "M";
