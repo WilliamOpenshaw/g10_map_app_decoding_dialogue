@@ -137,7 +137,7 @@ public class Tetris : MonoBehaviour
         //lets try it
         //Let's movea piece and see what number we get
         // a height of 364
-        startPos = new Vector2(0, 0); 
+        startPos = new Vector2(0, 313); 
 
         // this sets teh location of all the pieces to the starting location
         // so they can fall down when they appear 
@@ -176,31 +176,38 @@ public class Tetris : MonoBehaviour
         // let's change it to keep moving when you hold down the key
         // that's it
         //we need an if statement here
-        if(Input.GetKeyDown(KeyCode.LeftArrow))
+        if(Input.GetKey(KeyCode.LeftArrow))
         {
             //add if statement to stop it going out left side
             // what number are we checking?
-            // -798           
+            // -798   
+            if(rect.anchoredPosition.x < -760)
+            {        
             rect = shapes[choiceNumber].GetComponent<RectTransform>();
             //change it to 5 to make it move slower
-            rect.anchoredPosition = new Vector2(rect.anchoredPosition.x - 10,rect.anchoredPosition.y);
+            rect.anchoredPosition = new Vector2(rect.anchoredPosition.x - 5,rect.anchoredPosition.y);
+            }
             
         }
-        if(Input.GetKeyDown(KeyCode.RightArrow))
+        if(Input.GetKey(KeyCode.RightArrow))
         {
             //add if statement to stop it going out right side
             //What number do we need for the right side?
             //let's check
             //less than 795
+            if(rect.anchoredPosition.x < 795)
+            {
             rect = shapes[choiceNumber].GetComponent<RectTransform>();
             //change it to 5 to make it move slower
-            rect.anchoredPosition = new Vector2(rect.anchoredPosition.x + 10,rect.anchoredPosition.y);
+            rect.anchoredPosition = new Vector2(rect.anchoredPosition.x + 5,rect.anchoredPosition.y);
+            }
+
         }
         // this is the spawn time of the next block
         // if you set it to 3, a piece will appear every 3 seconds
         // lets set it to 2, and see what happens
         //we can make a new variable for this number called shapeSpawnWaitTime if we want it to be clearer
-        if(Time.time > lastTime + 5)
+        if(Time.time > lastTime + 2)
         {
             //resets time to wait
             lastTime = Time.time;
