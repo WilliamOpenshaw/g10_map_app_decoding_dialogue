@@ -5,27 +5,11 @@ using UnityEngine;
 public class catMasterPoints : MonoBehaviour
 {
     // percieving
-    public int pPoints;
-    // judging
-    public int jPoints;
-    public int ePoints;
-    public int fPoints;
-    public int iPoints;
-    public int nPoints;
-    public int sPoints;
-    public int tPoints;
+    public string result
     // Start is called before the first frame update
     void Start()
     {
-    pPoints = 0 ;
-    judging = 0 ;
-     jPoints = 0 ;
-     ePoints = 0 ;
-     fPoints = 0 ;
-     iPoints = 0 ;
-     nPoints = 0 ;
-     sPoints = 0 ;
-     tPoints = 0 ;
+        result = "";
     }
 
     // Update is called once per frame
@@ -33,4 +17,60 @@ public class catMasterPoints : MonoBehaviour
     {
         
     }
+    public void addA()
+    {
+        result += "A";
+    }
+    public void addB()
+    {
+        result += "B";
+    }
+    public void addC()
+    {
+        result += "C";
+    }
+    public void addD()
+    {
+        result += "D";
+    }
+    public void addE()
+    {
+        result += "E";
+    }
+    public void addF()
+    {
+        result += "F";
+    }
+    public void addG()
+    {
+        result += "G";
+    }
+    public void addH()
+    {
+        result += "H";
+    }
+    public void addI()
+    {
+        result += "I";
+    }
+    public void addJ()
+    {
+        result += "J";
+    }
+    public void addK()
+    {
+        result += "K"
+    }
+    public void addM()
+    {
+        result += "M";
+    }
+    public void resetResult()
+    {
+        result = "";
+    }
+    
+
+
 }
+
