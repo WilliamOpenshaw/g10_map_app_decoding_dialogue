@@ -5,7 +5,7 @@ using UnityEngine;
 public class catMasterPoints : MonoBehaviour
 {
     // percieving
-    public string result
+    public string result;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,7 +59,7 @@ public class catMasterPoints : MonoBehaviour
     }
     public void addK()
     {
-        result += "K"
+        result += "K";
     }
     public void addM()
     {
