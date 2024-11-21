@@ -40439,7 +40439,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1544559825}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 12.043903}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.617}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.65252084, y: 0.638}
   m_AnchoredPosition: {x: -885.9382, y: 111.57977}
