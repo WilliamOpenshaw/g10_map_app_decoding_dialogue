@@ -19,8 +19,8 @@ public class elsaJump : MonoBehaviour
     void Start()
     {
         velocity = 5.0f;        
-        ontheGround = new Vector2(-643,-357);
-        inTheAir = new Vector2(-643,48);
+        ontheGround = new Vector2(-694,-400);
+        inTheAir = new Vector2(-694,400);
         elsaRect = gameObject.GetComponent<RectTransform>();
         jumpProgress = 0.0f;
         up = false;
@@ -29,22 +29,22 @@ public class elsaJump : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {        
-        if (Input.GetKey(KeyCode.Space) && jumpProgress <= 0.11f)
+        if (Input.GetKey(KeyCode.Space) && jumpProgress <= 0.0f)
         {
             up = true;
         }
-        else if(jumpProgress < 0.9f && up == true)
+        else if(jumpProgress < 1.0f && up == true)
         {
-            jumpProgress += 0.1f;
+            jumpProgress += 0.025f;
             elsaRect.anchoredPosition = Vector2.Lerp(ontheGround, inTheAir, jumpProgress);
         }
-        else if (jumpProgress >= 0.89f && up == true)
+        else if (jumpProgress >= 1.0f && up == true)
         {
             up = false;
         }
-        else if (jumpProgress > 0.1f && up == false)
+        else if (jumpProgress > 0.0f && up == false)
         {
-            jumpProgress -= 0.1f;
+            jumpProgress -= 0.025f;
             elsaRect.anchoredPosition = Vector2.Lerp(ontheGround, inTheAir, jumpProgress);
         }  
         
