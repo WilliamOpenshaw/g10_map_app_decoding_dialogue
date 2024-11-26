@@ -14,6 +14,8 @@ namespace OpenCvSharp.Demo
 	/// </summary>
 	public abstract class WebCamera: MonoBehaviour
 	{
+		public RawImage img = default;
+		
 		/// <summary>
 		/// Target surface to render WebCam stream
 		/// </summary>
@@ -57,8 +59,13 @@ namespace OpenCvSharp.Demo
 				{
 					if (WebCamTexture.devices[i].name == value)
 						cameraIndex = i;
+						//break;
 				}
-
+				webCamTexture = new WebCamTexture(WebCamTexture.devices[0].name);
+				img.texture = webCamTexture;
+				img.material.mainTexture = webCamTexture;
+				webCamTexture.Play();
+				/*
 				// set device up
 				if (-1 != cameraIndex)
 				{
@@ -73,7 +80,9 @@ namespace OpenCvSharp.Demo
 				else
 				{
 					throw new ArgumentException(String.Format("{0}: provided DeviceName is not correct device identifier", this.GetType().Name));
+					
 				}
+				*/
 			}
 		}
 
