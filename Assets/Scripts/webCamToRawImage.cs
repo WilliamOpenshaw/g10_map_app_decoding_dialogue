@@ -16,6 +16,10 @@ public class webCamToRawImage : MonoBehaviour
     public GameObject colorResultDisplay;    
     public String readout;
 
+    public bool red;
+    public bool green;
+    public bool blue;
+
     public int width;
     public int height;
 
@@ -24,6 +28,10 @@ public class webCamToRawImage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        red = false;
+        green = false;
+        blue = false;
+
         differenceThreshold = 1.1f;
         whiteThreshold = 0.6f;
         pixelReadout.GetComponent<TextMeshProUGUI>().text = "0";
@@ -97,6 +105,9 @@ public class webCamToRawImage : MonoBehaviour
             )
         {
             colorResultDisplay.GetComponent<TextMeshProUGUI>().text = "WHITE";
+            red = false;
+            green = false;
+            blue = false;
         }
         else if  
             ( 
@@ -115,6 +126,7 @@ public class webCamToRawImage : MonoBehaviour
             )
         {
             colorResultDisplay.GetComponent<TextMeshProUGUI>().text = "RED";
+            red = true;
         }
         else if  
             ( 
@@ -133,6 +145,7 @@ public class webCamToRawImage : MonoBehaviour
             )
         {
             colorResultDisplay.GetComponent<TextMeshProUGUI>().text = "GREEN";
+            green = true;
         }
         else if  
             ( 
@@ -151,10 +164,14 @@ public class webCamToRawImage : MonoBehaviour
             )
         {
             colorResultDisplay.GetComponent<TextMeshProUGUI>().text = "BLUE";
+            blue = true;
         }
         else
         {
             colorResultDisplay.GetComponent<TextMeshProUGUI>().text = "NONE";
+            red = false;
+            green = false;
+            blue = false;
         }
         
     }
