@@ -18,9 +18,14 @@ public class webCamToRawImage : MonoBehaviour
 
     public int width;
     public int height;
+
+    public float whiteThreshold;
+    public float differenceThreshold;
     // Start is called before the first frame update
     void Start()
     {
+        differenceThreshold = 1.1f;
+        whiteThreshold = 0.6f;
         pixelReadout.GetComponent<TextMeshProUGUI>().text = "0";
         // Start is called before the first frame update
     
@@ -48,25 +53,47 @@ public class webCamToRawImage : MonoBehaviour
         //pixelReadout.GetComponent<TextMeshProUGUI>().text = webcamTexture.GetPixel(0,0).r.ToString();
         readout = 
         " All : " +
-        webcamTexture.GetPixel(0,0).ToString() + "\n" +
+        webcamTexture.GetPixel(730,195).ToString() + "\n" +
         " r : " +
-        webcamTexture.GetPixel(0,0).r.ToString() + "\n" +
+        webcamTexture.GetPixel(730,195).r.ToString() + "\n" +
         " a : " +
-        webcamTexture.GetPixel(0,0).a.ToString() + "\n" +
+        webcamTexture.GetPixel(730,195).a.ToString() + "\n" +
         " b : " +
-        webcamTexture.GetPixel(0,0).b.ToString() + "\n" +
+        webcamTexture.GetPixel(730,195).b.ToString() + "\n" +
         " g : " +
-        webcamTexture.GetPixel(0,0).g.ToString();
+        webcamTexture.GetPixel(730,195).g.ToString();
 
         pixelReadout.GetComponent<TextMeshProUGUI>().text = readout;
 
         if  
             ( 
-                webcamTexture.GetPixel(0,0).r > 0.7 
+                //top left
+                webcamTexture.GetPixel(730,195).r > whiteThreshold 
                 && 
-                webcamTexture.GetPixel(0,0).g > 0.7 
+                webcamTexture.GetPixel(730,195).g > whiteThreshold
                 &&
-                webcamTexture.GetPixel(0,0).b > 0.7
+                webcamTexture.GetPixel(730,195).b > whiteThreshold
+                // top right
+                &&
+                webcamTexture.GetPixel(1190,195).r > whiteThreshold 
+                && 
+                webcamTexture.GetPixel(1190,195).g > whiteThreshold 
+                &&
+                webcamTexture.GetPixel(1190,195).b > whiteThreshold
+                // bottom left
+                &&
+                webcamTexture.GetPixel(730,884).r > whiteThreshold 
+                && 
+                webcamTexture.GetPixel(730,884).g > whiteThreshold 
+                &&
+                webcamTexture.GetPixel(730,884).b > whiteThreshold
+                // bottom right
+                &&
+                webcamTexture.GetPixel(1190,884).r > whiteThreshold 
+                && 
+                webcamTexture.GetPixel(1190,884).g > whiteThreshold 
+                &&
+                webcamTexture.GetPixel(1190,884).b > whiteThreshold
             )
         {
             colorResultDisplay.GetComponent<TextMeshProUGUI>().text = "WHITE";
@@ -78,7 +105,13 @@ public class webCamToRawImage : MonoBehaviour
                 //webcamTexture.GetPixel(0,0).g < 0.4 
                 //&&
                 //webcamTexture.GetPixel(0,0).b < 0.4
-                ((webcamTexture.GetPixel(0,0).b + webcamTexture.GetPixel(0,0).g)/2) < webcamTexture.GetPixel(0,0).r
+                ((webcamTexture.GetPixel(730,195).b + webcamTexture.GetPixel(730,195).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(730,195).r
+                &&
+                ((webcamTexture.GetPixel(1190,195).b + webcamTexture.GetPixel(1190,195).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(1190,195).r
+                &&
+                ((webcamTexture.GetPixel(730,884).b + webcamTexture.GetPixel(730,884).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(730,884).r
+                &&
+                ((webcamTexture.GetPixel(1190,884).b + webcamTexture.GetPixel(1190,884).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(1190,884).r
             )
         {
             colorResultDisplay.GetComponent<TextMeshProUGUI>().text = "RED";
@@ -90,7 +123,13 @@ public class webCamToRawImage : MonoBehaviour
                 //webcamTexture.GetPixel(0,0).g > 0.5 
                 //&&
                 //webcamTexture.GetPixel(0,0).b < 0.4
-                ((webcamTexture.GetPixel(0,0).r + webcamTexture.GetPixel(0,0).b)/2) < webcamTexture.GetPixel(0,0).g
+                ((webcamTexture.GetPixel(730,195).r + webcamTexture.GetPixel(730,195).b)/2)*(differenceThreshold) < webcamTexture.GetPixel(730,195).g
+                &&
+                ((webcamTexture.GetPixel(1190,195).r + webcamTexture.GetPixel(1190,195).b)/2)*(differenceThreshold) < webcamTexture.GetPixel(1190,195).g
+                &&
+                ((webcamTexture.GetPixel(730,884).r + webcamTexture.GetPixel(730,884).b)/2)*(differenceThreshold) < webcamTexture.GetPixel(730,884).g
+                &&
+                ((webcamTexture.GetPixel(1190,884).r + webcamTexture.GetPixel(1190,884).b)/2)*(differenceThreshold) < webcamTexture.GetPixel(1190,884).g
             )
         {
             colorResultDisplay.GetComponent<TextMeshProUGUI>().text = "GREEN";
@@ -102,7 +141,13 @@ public class webCamToRawImage : MonoBehaviour
                 //webcamTexture.GetPixel(0,0).g < 0.4 
                 //&&
                 //webcamTexture.GetPixel(0,0).b > 0.4
-                ((webcamTexture.GetPixel(0,0).r + webcamTexture.GetPixel(0,0).g)/2) < webcamTexture.GetPixel(0,0).b
+                ((webcamTexture.GetPixel(730,195).r + webcamTexture.GetPixel(730,195).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(730,195).b
+                &&
+                ((webcamTexture.GetPixel(1190,195).r + webcamTexture.GetPixel(1190,195).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(1190,195).b
+                &&
+                ((webcamTexture.GetPixel(730,884).r + webcamTexture.GetPixel(730,884).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(730,884).b
+                &&
+                ((webcamTexture.GetPixel(1190,884).r + webcamTexture.GetPixel(1190,884).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(1190,884).b
             )
         {
             colorResultDisplay.GetComponent<TextMeshProUGUI>().text = "BLUE";
