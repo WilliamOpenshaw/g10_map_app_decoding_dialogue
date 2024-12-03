@@ -38,5 +38,6 @@ public class CameraFeed : MonoBehaviour
             webcamTexture.Stop();
         }
     }
+    
 }
 

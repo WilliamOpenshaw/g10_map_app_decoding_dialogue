@@ -334,7 +334,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 16777215
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -702,16 +702,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Prologue\r\n\r\nThe cycle starts again I see.\r\n\r\nI was certainly intrigued
-    by the previous cycle, I wonder how our new heroes will do, what is thy opinion?\r\n\r\nI
-    am addled, I do not know what answer I should present to thee.\u201D\r\n\r\nAh,
-    my time is up, the cycle shall begin. May we meet again.\r\n\r\nIndeed. Story
-    teller. We shall meet again\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nChapter
-    1 - A World Burning\r\nThe year is 2030, our heroes. Living on earth, a dimension
-    where the SDGs have been corrupted by the SDG Master. It is too late, but maybe
-    I can pull one last trick.\r\n\r\nShall I present the heroes of this cycle to
-    you? \r\nWell, I\u2019d take that as a yes. Our three heroes, rather intriguing
-    I\u2019d say. If you have met them you will know what I mean.\r\n\r\n\r\n\r\nFirstly,
+  m_text: "Chapter 1 - A World Burning\r\nThe year is 2030, our heroes. Living on
+    earth, a dimension where the SDGs have been corrupted by the SDG Master. It is
+    too late, but maybe I can pull one last trick.\r\n\r\nShall I present the heroes
+    of this cycle to you? \r\nWell, I\u2019d take that as a yes. Our three heroes,
+    rather intriguing I\u2019d say. If you have met them you will know what I mean.\r\n\r\n\r\n\r\nFirstly,
     we have Pablo Smidt. Pablo is a prodigy, a master of STEM subjects, and the smartest
     teenager in this dimension. But if you ever met him, he is a psychopath, sadistic
     and mentally ill being. But he is depressed, this is the perfect subject for
@@ -744,7 +739,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2414,10 +2409,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You will need to read a text, then answer questions related to the text.
-    \n\nLock in your answers by taking up the boards that have answers on it. Make
-    sure the answers on the board can be easily detected by the sensor.\n\nEach answers
-    you got right removes one head of the hydra"
+  m_text: Read the passage [Click on show story]. Answer the questions, when you
+    see the questions, select the corresponding colour coded card to answer the questions.
+    Defeat the Hydra to win. You will not die in this game. It is family Friendly!
+    :) Good Luck Have Fun
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2426,8 +2421,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2444,10 +2439,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
+  m_fontSize: 86.8
   m_fontSizeBase: 55
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 300
   m_fontStyle: 0
@@ -3736,7 +3731,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: yes
+  m_text: A corrupted, war-torn nightmare of a world.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4700,7 +4695,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: no
+  m_text: A utopia where everyone is happy.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6478,16 +6473,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Prologue\r\n\r\nThe cycle starts again I see.\r\n\r\nI was certainly intrigued
-    by the previous cycle, I wonder how our new heroes will do, what is thy opinion?\r\n\r\nI
-    am addled, I do not know what answer I should present to thee.\u201D\r\n\r\nAh,
-    my time is up, the cycle shall begin. May we meet again.\r\n\r\nIndeed. Story
-    teller. We shall meet again\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nChapter
-    1 - A World Burning\r\nThe year is 2030, our heroes. Living on earth, a dimension
-    where the SDGs have been corrupted by the SDG Master. It is too late, but maybe
-    I can pull one last trick.\r\n\r\nShall I present the heroes of this cycle to
-    you? \r\nWell, I\u2019d take that as a yes. Our three heroes, rather intriguing
-    I\u2019d say. If you have met them you will know what I mean.\r\n\r\n\r\n\r\nFirstly,
+  m_text: "Chapter 1 - A World Burning\r\nThe year is 2030, our heroes. Living on
+    earth, a dimension where the SDGs have been corrupted by the SDG Master. It is
+    too late, but maybe I can pull one last trick.\r\n\r\nShall I present the heroes
+    of this cycle to you? \r\nWell, I\u2019d take that as a yes. Our three heroes,
+    rather intriguing I\u2019d say. If you have met them you will know what I mean.\r\n\r\n\r\n\r\nFirstly,
     we have Pablo Smidt. Pablo is a prodigy, a master of STEM subjects, and the smartest
     teenager in this dimension. But if you ever met him, he is a psychopath, sadistic
     and mentally ill being. But he is depressed, this is the perfect subject for
@@ -6520,7 +6510,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7284,7 +7274,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8367,16 +8357,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Prologue\r\n\r\nThe cycle starts again I see.\r\n\r\nI was certainly intrigued
-    by the previous cycle, I wonder how our new heroes will do, what is thy opinion?\r\n\r\nI
-    am addled, I do not know what answer I should present to thee.\u201D\r\n\r\nAh,
-    my time is up, the cycle shall begin. May we meet again.\r\n\r\nIndeed. Story
-    teller. We shall meet again\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nChapter
-    1 - A World Burning\r\nThe year is 2030, our heroes. Living on earth, a dimension
-    where the SDGs have been corrupted by the SDG Master. It is too late, but maybe
-    I can pull one last trick.\r\n\r\nShall I present the heroes of this cycle to
-    you? \r\nWell, I\u2019d take that as a yes. Our three heroes, rather intriguing
-    I\u2019d say. If you have met them you will know what I mean.\r\n\r\n\r\n\r\nFirstly,
+  m_text: "Chapter 1 - A World Burning\r\nThe year is 2030, our heroes. Living on
+    earth, a dimension where the SDGs have been corrupted by the SDG Master. It is
+    too late, but maybe I can pull one last trick.\r\n\r\nShall I present the heroes
+    of this cycle to you? \r\nWell, I\u2019d take that as a yes. Our three heroes,
+    rather intriguing I\u2019d say. If you have met them you will know what I mean.\r\n\r\n\r\n\r\nFirstly,
     we have Pablo Smidt. Pablo is a prodigy, a master of STEM subjects, and the smartest
     teenager in this dimension. But if you ever met him, he is a psychopath, sadistic
     and mentally ill being. But he is depressed, this is the perfect subject for
@@ -8409,7 +8394,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8510,8 +8495,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4636042, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 547, y: -4}
-  m_SizeDelta: {x: 574.5457, y: 34.42}
+  m_AnchoredPosition: {x: 489, y: -6}
+  m_SizeDelta: {x: 1179.8977, y: 26.3701}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &756366692
 MonoBehaviour:
@@ -8533,7 +8518,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Question: Is Thomas a pokemon master?'
+  m_text: 'What happened to the world the heroes live in? Who is responsible for
+    all of the problems?
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8542,8 +8530,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8812,7 +8800,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A Pablo is not a Pablo
+  m_text: Pablo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9207,8 +9195,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 504, y: -9.420013}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 483, y: -2}
+  m_SizeDelta: {x: 708.7534, y: 22.6304}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &804360884
 MonoBehaviour:
@@ -9230,7 +9218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Question: Is Inge sadistic?'
+  m_text: How is the world where the three heroes reside within?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9239,8 +9227,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10750,7 +10738,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Yes, absolutely Yes
+  m_text: The world was sent into total war, corrupted and everything is falling
+    apart, caused by the SDG Master.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10777,7 +10766,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 52.75
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11386,10 +11375,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 342371593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 504, y: -9.420013}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMin: {x: 0.24687499, y: 0.5}
+  m_AnchorMax: {x: 0.7793749, y: 0.71022815}
+  m_AnchoredPosition: {x: 538, y: -8}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1034796183
 MonoBehaviour:
@@ -11411,7 +11400,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Question: what is a pablo?'
+  m_text: Which Character would potentially demonstrate the best leadership?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11420,8 +11409,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11545,7 +11534,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: no
+  m_text: 'An imperial world ruled by a king and queen.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17390,7 +17381,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A Pablo is somehow Pablo but also not a Pablo
+  m_text: Jardani
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17417,7 +17408,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 71.8
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -17949,7 +17940,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Yes
+  m_text: The world was saved from armageddon by little Jimmy in the neighbourhood.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17976,7 +17967,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 54.65
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -18315,7 +18306,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A Pablo is a Pablo
+  m_text: Tomas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19541,8 +19532,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -20462,7 +20453,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 0
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -20783,7 +20774,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Yess
+  m_text: Nothing happened, it is just the current world caused by different leaders
+    in the world.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20810,7 +20802,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 54.65
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -21136,7 +21128,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
