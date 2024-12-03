@@ -24,6 +24,7 @@ public class webCamSetup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        webcamTexture.GetPixel(0,0);
         
     }
 }
