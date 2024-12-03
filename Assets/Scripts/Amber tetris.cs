@@ -9,7 +9,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 //using UnityEngine.Vector2;
 
-public class Tetris : MonoBehaviour
+public class AmberTetris : MonoBehaviour
 {
     public GameObject square0;
     public GameObject long0;
