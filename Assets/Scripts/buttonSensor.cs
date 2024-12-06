@@ -17,7 +17,7 @@ public class buttonSensor : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(webCamScript.red == true) 
         {      
@@ -39,14 +39,17 @@ public class buttonSensor : MonoBehaviour
         if(webCamScript.red == true && counter > 90) 
         {      
             redButton.onClick.Invoke();
+            counter = 0;
         }
         else if(webCamScript.green == true && counter > 90) 
         {      
             greenButton.onClick.Invoke();
+            counter = 0;
         }
         else if(webCamScript.blue == true && counter > 90) 
         {      
             blueButton.onClick.Invoke();
+            counter = 0;
         }
     }
 }

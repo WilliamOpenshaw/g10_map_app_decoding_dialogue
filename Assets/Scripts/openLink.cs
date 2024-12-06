@@ -7,6 +7,6 @@ public class openLink : MonoBehaviour
     // Start is called before the first frame update
     public void openLinkURL()
     {
-        Application.OpenURL("http://unity3d.com/");
+        Application.OpenURL("https://trinket.io/python/ad7c33fdd9de");
     }
 }
