@@ -36,17 +36,17 @@ public class buttonSensor : MonoBehaviour
             counter = 0;
         }
 
-        if(webCamScript.red == true && counter > 90) 
+        if(webCamScript.red == true && counter > 60) 
         {      
             redButton.onClick.Invoke();
             counter = 0;
         }
-        else if(webCamScript.green == true && counter > 90) 
+        else if(webCamScript.green == true && counter > 60) 
         {      
             greenButton.onClick.Invoke();
             counter = 0;
         }
-        else if(webCamScript.blue == true && counter > 90) 
+        else if(webCamScript.blue == true && counter > 60) 
         {      
             blueButton.onClick.Invoke();
             counter = 0;

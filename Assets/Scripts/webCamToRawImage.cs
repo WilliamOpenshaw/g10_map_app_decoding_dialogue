@@ -44,6 +44,8 @@ public class webCamToRawImage : MonoBehaviour
             Debug.Log(devices[i].name);
             my_device = devices[i];
         }
+        //choose device
+        //webcamTexture = new WebCamTexture(devices[0].name);
         webcamTexture = new WebCamTexture(devices[0].name);
         img.texture = webcamTexture;
 		img.material.mainTexture = webcamTexture;
@@ -57,24 +59,51 @@ public class webCamToRawImage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+        // 730,195 --> width * 0.31 and height *0.12
+        // 1190,195 --> width * 0.31 and height *0.12
+        // 730,884 --> width * 0.31and height *0.88
+        // 1190,884 --> width * 0.31and height *0.88
+
+
         //width = webcamTexture.width;
         //pixelReadout.GetComponent<TextMeshProUGUI>().text = webcamTexture.GetPixel(0,0).r.ToString();
+        /*
         readout = 
         " All : " +
         webcamTexture.GetPixel(730,195).ToString() + "\n" +
         " r : " +
         webcamTexture.GetPixel(730,195).r.ToString() + "\n" +
-        " a : " +
-        webcamTexture.GetPixel(730,195).a.ToString() + "\n" +
+        " g : " +
+        webcamTexture.GetPixel(730,195).g.ToString() + "\n" +
         " b : " +
         webcamTexture.GetPixel(730,195).b.ToString() + "\n" +
+        " a : " +
+        webcamTexture.GetPixel(730,195).a.ToString() + "\n" +
+        "width" + width + "\n" +
+        "height" +height;
+        */
+
+        readout = 
+        " All : " +
+        webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).ToString() + "\n" +
+        " r : " +
+        webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).r.ToString() + "\n" +
         " g : " +
-        webcamTexture.GetPixel(730,195).g.ToString();
+        webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).g.ToString() + "\n" +
+        " b : " +
+        webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).b.ToString() + "\n" +
+        " a : " +
+        webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).a.ToString() + "\n" +
+        "width" + width + "\n" +
+        "height" +height;
 
         pixelReadout.GetComponent<TextMeshProUGUI>().text = readout;
 
         if  
             ( 
+                /*
                 //top left
                 webcamTexture.GetPixel(730,195).r > whiteThreshold 
                 && 
@@ -102,6 +131,33 @@ public class webCamToRawImage : MonoBehaviour
                 webcamTexture.GetPixel(1190,884).g > whiteThreshold 
                 &&
                 webcamTexture.GetPixel(1190,884).b > whiteThreshold
+                */
+                webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).r > whiteThreshold 
+                && 
+                webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).g > whiteThreshold
+                &&
+                webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).b > whiteThreshold
+                // top right
+                &&
+                webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).r > whiteThreshold 
+                && 
+                webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).g > whiteThreshold 
+                &&
+                webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).b > whiteThreshold
+                // bottom left
+                &&
+                webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).r > whiteThreshold 
+                && 
+                webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).g > whiteThreshold 
+                &&
+                webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).b > whiteThreshold
+                // bottom right
+                &&
+                webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).r > whiteThreshold 
+                && 
+                webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).g > whiteThreshold 
+                &&
+                webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).b > whiteThreshold
             )
         {
             colorResultDisplay.GetComponent<TextMeshProUGUI>().text = "WHITE";
@@ -116,6 +172,7 @@ public class webCamToRawImage : MonoBehaviour
                 //webcamTexture.GetPixel(0,0).g < 0.4 
                 //&&
                 //webcamTexture.GetPixel(0,0).b < 0.4
+                /*
                 ((webcamTexture.GetPixel(730,195).b + webcamTexture.GetPixel(730,195).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(730,195).r
                 &&
                 ((webcamTexture.GetPixel(1190,195).b + webcamTexture.GetPixel(1190,195).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(1190,195).r
@@ -123,6 +180,14 @@ public class webCamToRawImage : MonoBehaviour
                 ((webcamTexture.GetPixel(730,884).b + webcamTexture.GetPixel(730,884).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(730,884).r
                 &&
                 ((webcamTexture.GetPixel(1190,884).b + webcamTexture.GetPixel(1190,884).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(1190,884).r
+                */
+                ((webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).b + webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).g)/2)*(differenceThreshold) < webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).r
+                &&
+                ((webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).b + webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).g)/2)*(differenceThreshold) < webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).r
+                &&
+                ((webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).b + webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).g)/2)*(differenceThreshold) < webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).r
+                &&
+                ((webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).b + webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).g)/2)*(differenceThreshold) < webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).r
             )
         {
             colorResultDisplay.GetComponent<TextMeshProUGUI>().text = "RED";
@@ -135,6 +200,7 @@ public class webCamToRawImage : MonoBehaviour
                 //webcamTexture.GetPixel(0,0).g > 0.5 
                 //&&
                 //webcamTexture.GetPixel(0,0).b < 0.4
+                /*
                 ((webcamTexture.GetPixel(730,195).r + webcamTexture.GetPixel(730,195).b)/2)*(differenceThreshold) < webcamTexture.GetPixel(730,195).g
                 &&
                 ((webcamTexture.GetPixel(1190,195).r + webcamTexture.GetPixel(1190,195).b)/2)*(differenceThreshold) < webcamTexture.GetPixel(1190,195).g
@@ -142,6 +208,14 @@ public class webCamToRawImage : MonoBehaviour
                 ((webcamTexture.GetPixel(730,884).r + webcamTexture.GetPixel(730,884).b)/2)*(differenceThreshold) < webcamTexture.GetPixel(730,884).g
                 &&
                 ((webcamTexture.GetPixel(1190,884).r + webcamTexture.GetPixel(1190,884).b)/2)*(differenceThreshold) < webcamTexture.GetPixel(1190,884).g
+                */
+                ((webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).r + webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).b)/2)*(differenceThreshold) < webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).g
+                &&
+                ((webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).r + webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).b)/2)*(differenceThreshold) < webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).g
+                &&
+                ((webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).r + webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).b)/2)*(differenceThreshold) < webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).g
+                &&
+                ((webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).r + webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).b)/2)*(differenceThreshold) < webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).g
             )
         {
             colorResultDisplay.GetComponent<TextMeshProUGUI>().text = "GREEN";
@@ -154,6 +228,7 @@ public class webCamToRawImage : MonoBehaviour
                 //webcamTexture.GetPixel(0,0).g < 0.4 
                 //&&
                 //webcamTexture.GetPixel(0,0).b > 0.4
+                /*
                 ((webcamTexture.GetPixel(730,195).r + webcamTexture.GetPixel(730,195).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(730,195).b
                 &&
                 ((webcamTexture.GetPixel(1190,195).r + webcamTexture.GetPixel(1190,195).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(1190,195).b
@@ -161,6 +236,14 @@ public class webCamToRawImage : MonoBehaviour
                 ((webcamTexture.GetPixel(730,884).r + webcamTexture.GetPixel(730,884).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(730,884).b
                 &&
                 ((webcamTexture.GetPixel(1190,884).r + webcamTexture.GetPixel(1190,884).g)/2)*(differenceThreshold) < webcamTexture.GetPixel(1190,884).b
+                */
+                ((webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).r + webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).g)/2)*(differenceThreshold) < webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).b
+                &&
+                ((webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).r + webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).g)/2)*(differenceThreshold) < webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.12f)).b
+                &&
+                ((webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).r + webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).g)/2)*(differenceThreshold) < webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).b
+                &&
+                ((webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).r + webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).g)/2)*(differenceThreshold) < webcamTexture.GetPixel((int)(width*0.31f),(int)(height*0.88f)).b
             )
         {
             colorResultDisplay.GetComponent<TextMeshProUGUI>().text = "BLUE";
