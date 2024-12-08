@@ -17,7 +17,7 @@ public class buttonSensor : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(webCamScript.red == true) 
         {      
