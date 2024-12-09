@@ -95,26 +95,26 @@ public class Tetris : MonoBehaviour
 
         //this is the text that needs to change
         //The text here will appear in the pieces
-        square0Sentence.GetComponent<TextMeshProUGUI>().text = "A";
-        long0Sentence.GetComponent<TextMeshProUGUI>().text = "B";
-        zigzag0Sentence.GetComponent<TextMeshProUGUI>().text = "C";
-        zigzag0Sentence2.GetComponent<TextMeshProUGUI>().text = "D";
-        square1Sentence.GetComponent<TextMeshProUGUI>().text = "E";
-        long1Sentence.GetComponent<TextMeshProUGUI>().text = "F";
-        zigzag1Sentence.GetComponent<TextMeshProUGUI>().text = "G";
-        zigzag1Sentence2.GetComponent<TextMeshProUGUI>().text = "H";
-        square2Sentence.GetComponent<TextMeshProUGUI>().text = "I";
-        long2Sentence.GetComponent<TextMeshProUGUI>().text = "J";
-        zigzag2Sentence.GetComponent<TextMeshProUGUI>().text = "K";
-        zigzag2Sentence2.GetComponent<TextMeshProUGUI>().text = "L";
-        square3Sentence.GetComponent<TextMeshProUGUI>().text = "M";
-        long3Sentence.GetComponent<TextMeshProUGUI>().text = "N";
-        zigzag3Sentence.GetComponent<TextMeshProUGUI>().text = "O";
-        zigzag3Sentence2.GetComponent<TextMeshProUGUI>().text = "P";
-        square4Sentence.GetComponent<TextMeshProUGUI>().text = "Q";
-        long4Sentence.GetComponent<TextMeshProUGUI>().text = "R";
-        zigzag4Sentence.GetComponent<TextMeshProUGUI>().text = "S";
-        zigzag4Sentence2.GetComponent<TextMeshProUGUI>().text = "T";
+        square0Sentence.GetComponent<TextMeshProUGUI>().text = "The cat cried";
+        long0Sentence.GetComponent<TextMeshProUGUI>().text = "The cat played";
+        zigzag0Sentence.GetComponent<TextMeshProUGUI>().text = "The cat";
+        zigzag0Sentence2.GetComponent<TextMeshProUGUI>().text = "slept";
+        square1Sentence.GetComponent<TextMeshProUGUI>().text = "The cat ate";
+        long1Sentence.GetComponent<TextMeshProUGUI>().text = "The cat climbed";
+        zigzag1Sentence.GetComponent<TextMeshProUGUI>().text = "The cat";
+        zigzag1Sentence2.GetComponent<TextMeshProUGUI>().text = "drank";
+        square2Sentence.GetComponent<TextMeshProUGUI>().text = "The cat jumped";
+        long2Sentence.GetComponent<TextMeshProUGUI>().text = "The cat excercised";
+        zigzag2Sentence.GetComponent<TextMeshProUGUI>().text = "The cat";
+        zigzag2Sentence2.GetComponent<TextMeshProUGUI>().text = "loved a boy";
+        square3Sentence.GetComponent<TextMeshProUGUI>().text = "The cat looked at something";
+        long3Sentence.GetComponent<TextMeshProUGUI>().text = "The cat scrolled";
+        zigzag3Sentence.GetComponent<TextMeshProUGUI>().text = "The cat";
+        zigzag3Sentence2.GetComponent<TextMeshProUGUI>().text = "taught";
+        square4Sentence.GetComponent<TextMeshProUGUI>().text = "The cat smoked";
+        long4Sentence.GetComponent<TextMeshProUGUI>().text = "The cat planted";
+        zigzag4Sentence.GetComponent<TextMeshProUGUI>().text = "The Cat";
+        zigzag4Sentence2.GetComponent<TextMeshProUGUI>().text = "danced";
 
         // this makes all the pieces turned off at the beginning
         square0.SetActive(false);
@@ -176,31 +176,37 @@ public class Tetris : MonoBehaviour
         // let's change it to keep moving when you hold down the key
         // that's it
         //we need an if statement here
-        if(Input.GetKeyDown(KeyCode.LeftArrow))
+        if(Input.GetKey(KeyCode.LeftArrow))
         {
             //add if statement to stop it going out left side
             // what number are we checking?
             // -798           
-            rect = shapes[choiceNumber].GetComponent<RectTransform>();
+            if(rect.anchoredPosition.x>-798)
+            {
+                rect = shapes[choiceNumber].GetComponent<RectTransform>();
             //change it to 5 to make it move slower
-            rect.anchoredPosition = new Vector2(rect.anchoredPosition.x - 10,rect.anchoredPosition.y);
+                rect.anchoredPosition = new Vector2(rect.anchoredPosition.x - 5,rect.anchoredPosition.y);
+            }
             
         }
-        if(Input.GetKeyDown(KeyCode.RightArrow))
+        if(Input.GetKey(KeyCode.RightArrow))
         {
             //add if statement to stop it going out right side
             //What number do we need for the right side?
             //let's check
             //less than 795
-            rect = shapes[choiceNumber].GetComponent<RectTransform>();
+            if(rect.anchoredPosition.x<795)
+            {
+                rect = shapes[choiceNumber].GetComponent<RectTransform>();
             //change it to 5 to make it move slower
-            rect.anchoredPosition = new Vector2(rect.anchoredPosition.x + 10,rect.anchoredPosition.y);
+                rect.anchoredPosition = new Vector2(rect.anchoredPosition.x + 5,rect.anchoredPosition.y);
+            }
         }
         // this is the spawn time of the next block
         // if you set it to 3, a piece will appear every 3 seconds
         // lets set it to 2, and see what happens
         //we can make a new variable for this number called shapeSpawnWaitTime if we want it to be clearer
-        if(Time.time > lastTime + 5)
+        if(Time.time > lastTime + 2)
         {
             //resets time to wait
             lastTime = Time.time;
@@ -266,6 +272,8 @@ public class Tetris : MonoBehaviour
         square4.SetActive(false);
         long4.SetActive(false);
         zigzag4.SetActive(false);
+
+        startPos= new Vector2(0,0);
 
         square0.GetComponent<RectTransform>().anchoredPosition = startPos;
         long0.GetComponent<RectTransform>().anchoredPosition = startPos;
