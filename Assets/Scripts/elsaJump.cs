@@ -34,6 +34,7 @@ public class elsaJump : MonoBehaviour
     public int counter;
 
     public GameObject loseScreen;
+    public GameObject winScreen;
 
     public Image countdown;
 
@@ -64,8 +65,9 @@ public class elsaJump : MonoBehaviour
 
     // Update is called once per frame
     void FixedUpdate()
-    {        
-        countdown.fillAmount += 0.01f * Time.deltaTime;
+    {    
+         
+        countdown.fillAmount += 0.035f * Time.deltaTime;
 
         if ((Input.GetKey(KeyCode.Space) || Input.GetButton("Jump")) && jumpProgress <= 0.0f && playing == true)
         {
@@ -123,6 +125,11 @@ public class elsaJump : MonoBehaviour
         if(counter > 80)
         {
             loseScreen.SetActive(true);
+            countdown.gameObject.SetActive(false);
+        }
+        if(countdown.fillAmount > 0.99f)
+        {
+            winScreen.SetActive(true);
             countdown.gameObject.SetActive(false);
         }
         
