@@ -65,18 +65,18 @@ sysinfo.txt
 crashlytics-build.properties
 
 # version number
-/Packages/packages-lock.json
+#/Packages/packages-lock.json
 
-Packages/packages-lock.json
+#Packages/packages-lock.json
 
-packages-lock.json
+#packages-lock.json
 
 # project version also
-/ProjectSettings/ProjectVersion.txt
+#/ProjectSettings/ProjectVersion.txt
 
-ProjectSettings/ProjectVersion.txt
+#ProjectSettings/ProjectVersion.txt
 
-ProjectVersion.txt
+#ProjectVersion.txt
 
 # Packed Addressables
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
