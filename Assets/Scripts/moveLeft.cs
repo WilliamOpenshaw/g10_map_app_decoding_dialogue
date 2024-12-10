@@ -19,12 +19,13 @@ public class moveLeft : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        velocity += 0.1f * Time.deltaTime; 
         //olaf1RB.MovePosition(olaf1RB.position + velocity * Time.fixedDeltaTime);
         rect.anchoredPosition = new Vector2(rect.anchoredPosition.x - velocity,rect.anchoredPosition.y);
 
         if(rect.anchoredPosition.x < -1128)
         {
-            rect.anchoredPosition = new Vector2(1193,rect.anchoredPosition.y);
+            rect.anchoredPosition = new Vector2(Random.Range(5000.0f, 6000.0f),rect.anchoredPosition.y);
         }
         
     }
