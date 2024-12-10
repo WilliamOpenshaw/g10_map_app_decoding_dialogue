@@ -41,6 +41,7 @@ public class elsaJump : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        countdown.gameObject.SetActive(true);
         countdown.fillAmount = 0.0f;
         loseScreen.SetActive(false);
         counter = 0;
@@ -122,6 +123,7 @@ public class elsaJump : MonoBehaviour
         if(counter > 80)
         {
             loseScreen.SetActive(true);
+            countdown.gameObject.SetActive(false);
         }
         
     }
