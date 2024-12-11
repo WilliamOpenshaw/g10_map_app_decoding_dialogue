@@ -41309,6 +41309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   catFont: {fileID: 11400000, guid: 33f4d22288cbcfc479670b4f943a7265, type: 2}
   normalFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  info: {fileID: 723135839}
   text1: {fileID: 105172050}
   text2: {fileID: 1704025525}
   text3: {fileID: 1611250703}
