@@ -61,6 +61,37 @@ public class elsaJump : MonoBehaviour
 
         jumpProgress = 0.0f;
         up = false;
+
+        olaf1Rect.anchoredPosition = new Vector2(1018, -427);
+        olaf2Rect.anchoredPosition = new Vector2(3462, -392);
+        olaf3Rect.anchoredPosition = new Vector2(5571, -452);
+    }
+
+    void OnEnable()
+    {
+        countdown.gameObject.SetActive(true);
+        countdown.fillAmount = 0.0f;
+        loseScreen.SetActive(false);
+        counter = 0;
+        playing = true;
+        //olafScript.velocity = 13.0f;
+        boom.SetActive(false);
+
+        velocity = 5.0f;        
+        ontheGround = new Vector2(-694,-400);
+        inTheAir = new Vector2(-694,400);
+        elsaRect = gameObject.GetComponent<RectTransform>();
+
+        olaf1Rect = olaf1.GetComponent<RectTransform>();
+        olaf2Rect = olaf2.GetComponent<RectTransform>();
+        olaf3Rect = olaf3.GetComponent<RectTransform>();
+
+        jumpProgress = 0.0f;
+        up = false;
+
+        olaf1Rect.anchoredPosition = new Vector2(1018, -427);
+        olaf2Rect.anchoredPosition = new Vector2(3462, -392);
+        olaf3Rect.anchoredPosition = new Vector2(5571, -452);
     }
 
     // Update is called once per frame
@@ -124,13 +155,21 @@ public class elsaJump : MonoBehaviour
         }
         if(counter > 80)
         {
+            boom.SetActive(false);
             loseScreen.SetActive(true);
             countdown.gameObject.SetActive(false);
+            olaf1Rect.anchoredPosition = new Vector2(1018, -427);
+            olaf2Rect.anchoredPosition = new Vector2(3462, -392);
+            olaf3Rect.anchoredPosition = new Vector2(5571, -452);
         }
         if(countdown.fillAmount > 0.99f)
         {
+            boom.SetActive(false);
             winScreen.SetActive(true);
             countdown.gameObject.SetActive(false);
+            olaf1Rect.anchoredPosition = new Vector2(1018, -427);
+            olaf2Rect.anchoredPosition = new Vector2(3462, -392);
+            olaf3Rect.anchoredPosition = new Vector2(5571, -452);
         }
         
     }
