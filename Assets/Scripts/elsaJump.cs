@@ -34,6 +34,7 @@ public class elsaJump : MonoBehaviour
     public int counter;
 
     public GameObject loseScreen;
+    public GameObject winScreen;
 
     public Image countdown;
 
@@ -41,6 +42,7 @@ public class elsaJump : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        countdown.gameObject.SetActive(true);
         countdown.fillAmount = 0.0f;
         loseScreen.SetActive(false);
         counter = 0;
@@ -63,8 +65,9 @@ public class elsaJump : MonoBehaviour
 
     // Update is called once per frame
     void FixedUpdate()
-    {        
-        countdown.fillAmount += 0.01f * Time.deltaTime;
+    {    
+         
+        countdown.fillAmount += 0.035f * Time.deltaTime;
 
         if ((Input.GetKey(KeyCode.Space) || Input.GetButton("Jump")) && jumpProgress <= 0.0f && playing == true)
         {
@@ -121,7 +124,20 @@ public class elsaJump : MonoBehaviour
         }
         if(counter > 80)
         {
+            playing = true;
+            boom.SetActive(false);
+            counter = 0;
+            olaf1Rect.anchoredPosition = new Vector2(5571,-452);
+            olaf2Rect.anchoredPosition = new Vector2(1018,-427);
+            olaf3Rect.anchoredPosition = new Vector2(3462,-392);
             loseScreen.SetActive(true);
+            countdown.gameObject.SetActive(false);
+        }
+        if(countdown.fillAmount > 0.99f && countdown.IsActive() == true)
+        {
+
+            winScreen.SetActive(true);
+            countdown.gameObject.SetActive(false);
         }
         
     }
