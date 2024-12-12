@@ -9,11 +9,13 @@ public class buttonSensor : MonoBehaviour
     public Button blueButton;
     public Button greenButton;
     public webCamToRawImage webCamScript;
-    public int counter;
+    public int counter;  
+    
 
     void Start()
     {
-        counter = 0;
+        counter = 0; 
+        
     }
 
     // Update is called once per frame
@@ -51,5 +53,7 @@ public class buttonSensor : MonoBehaviour
             blueButton.onClick.Invoke();
             counter = 0;
         }
+
     }
+
 }
