@@ -13973,7 +13973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &348949618
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18035,7 +18035,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &438870473
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28169,7 +28169,7 @@ FrictionJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1312, y: 846.6667}
+  m_ConnectedAnchor: {x: 984, y: 635}
   m_MaxForce: 1
   m_MaxTorque: 1
 --- !u!50 &751911632
@@ -34980,7 +34980,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &916677187
 RectTransform:
   m_ObjectHideFlags: 0
@@ -49634,7 +49634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1384559989
 RectTransform:
   m_ObjectHideFlags: 0
@@ -56806,7 +56806,7 @@ FrictionJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1336, y: 869.3334}
+  m_ConnectedAnchor: {x: 1002, y: 652}
   m_MaxForce: 1
   m_MaxTorque: 1
 --- !u!50 &1602670301
@@ -65507,7 +65507,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.64279175, y: 0.19800001}
   m_AnchorMax: {x: 0.86300004, y: 0.333}
-  m_AnchoredPosition: {x: 4.700012, y: 0}
+  m_AnchoredPosition: {x: 4.699951, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1829913004
@@ -77989,7 +77989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2143212182
 RectTransform:
   m_ObjectHideFlags: 0

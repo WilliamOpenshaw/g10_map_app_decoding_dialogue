@@ -16,6 +16,12 @@ public class moveLeft : MonoBehaviour
         velocity = 13.0f;
     }
 
+    void OnEnable()
+    {
+        rect = gameObject.GetComponent<RectTransform>();
+        velocity = 13.0f;
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
