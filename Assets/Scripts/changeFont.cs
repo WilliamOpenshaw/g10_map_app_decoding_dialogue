@@ -26,6 +26,14 @@ public class changeFont : MonoBehaviour
     public TextMeshProUGUI text14;
     public TextMeshProUGUI text15;
 
+    public TextMeshProUGUI text16;
+
+    public TextMeshProUGUI text17;
+
+    public TextMeshProUGUI text18;
+
+    public TextMeshProUGUI text19;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +53,10 @@ public class changeFont : MonoBehaviour
         text13.font = catFont;
         text14.font = catFont;
         text15.font = catFont;
+        text16.font = catFont;
+        text17.font = catFont;
+        text18.font = catFont;
+        text19.font = catFont;
     }
 
     // Update is called once per frame
@@ -68,6 +80,10 @@ public class changeFont : MonoBehaviour
             text13.font = normalFont;
             text14.font = normalFont;
             text15.font = normalFont;
+            text16.font = normalFont;
+        text17.font = normalFont;
+        text18.font = normalFont;
+        text19.font = normalFont;
         }
         else if (text1.font == normalFont)
         {
@@ -87,6 +103,11 @@ public class changeFont : MonoBehaviour
             text13.font = catFont;
             text14.font = catFont;
             text15.font = catFont;
+            text15.font = catFont;
+        text16.font = catFont;
+        text17.font = catFont;
+        text18.font = catFont;
+        text19.font = catFont;
         }
     }
 }
