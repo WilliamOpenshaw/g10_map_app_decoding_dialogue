@@ -68,7 +68,7 @@ public class countQuestions : MonoBehaviour
             humanhealth1.fillAmount = 1.0f;
             hydrahealth2.fillAmount = 1.0f;
             humanhealth2.fillAmount = 1.0f;
-            hydrahealth3.fillAmount = 1.0f;
+            //hydrahealth3.fillAmount = 1.0f;
             humanhealth3.fillAmount = 1.0f;
         }
         if(story.activeSelf == true)
