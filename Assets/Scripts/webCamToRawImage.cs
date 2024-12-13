@@ -32,7 +32,7 @@ public class webCamToRawImage : MonoBehaviour
         green = false;
         blue = false;
 
-        differenceThreshold = 1.1f;
+        differenceThreshold = 1.2f;
         whiteThreshold = 0.6f;
         pixelReadout.GetComponent<TextMeshProUGUI>().text = "0";
         // Start is called before the first frame update
