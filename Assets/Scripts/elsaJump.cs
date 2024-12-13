@@ -124,11 +124,18 @@ public class elsaJump : MonoBehaviour
         }
         if(counter > 80)
         {
+            playing = true;
+            boom.SetActive(false);
+            counter = 0;
+            olaf1Rect.anchoredPosition = new Vector2(5571,-452);
+            olaf2Rect.anchoredPosition = new Vector2(1018,-427);
+            olaf3Rect.anchoredPosition = new Vector2(3462,-392);
             loseScreen.SetActive(true);
             countdown.gameObject.SetActive(false);
         }
-        if(countdown.fillAmount > 0.99f)
+        if(countdown.fillAmount > 0.99f && countdown.IsActive() == true)
         {
+
             winScreen.SetActive(true);
             countdown.gameObject.SetActive(false);
         }
