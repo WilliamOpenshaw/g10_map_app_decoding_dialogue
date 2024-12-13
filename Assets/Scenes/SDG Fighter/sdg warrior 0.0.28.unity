@@ -51133,6 +51133,7 @@ MonoBehaviour:
   pointsText: {fileID: 1352285019}
   wPath: {fileID: 54326326}
   lPath: {fileID: 1716759771}
+  startScreen: {fileID: 0}
 --- !u!1 &1629761786
 GameObject:
   m_ObjectHideFlags: 0
