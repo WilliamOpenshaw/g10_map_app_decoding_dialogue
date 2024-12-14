@@ -18,6 +18,9 @@ public class countQuestions : MonoBehaviour
     public Image hydrahealth3;
     public Image humanhealth3;
     public int counter;
+    
+    public GameObject wrong3;
+  
 
     public GameObject story;
     // Start is called before the first frame update
@@ -46,6 +49,9 @@ public class countQuestions : MonoBehaviour
         counter += 1;
         if(wrongAnswerCount >= 2)
         {
+            
+            wrong3.SetActive(false);
+
             loseScreen.SetActive(true);
             //questionsAnswered = 0;
             wrongAnswerCount = 0;
