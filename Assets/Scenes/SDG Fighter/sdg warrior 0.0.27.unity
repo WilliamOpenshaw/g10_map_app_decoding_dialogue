@@ -27338,7 +27338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &890571875
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35756,6 +35756,7 @@ MonoBehaviour:
   hydrahealth3: {fileID: 479132907}
   humanhealth3: {fileID: 2117581393}
   counter: 0
+  wrong3: {fileID: 940112047}
   story: {fileID: 257584862}
 --- !u!1 &1165993278
 GameObject:
@@ -51133,6 +51134,7 @@ MonoBehaviour:
   pointsText: {fileID: 1352285019}
   wPath: {fileID: 54326326}
   lPath: {fileID: 1716759771}
+  startScreen: {fileID: 0}
 --- !u!1 &1629761786
 GameObject:
   m_ObjectHideFlags: 0
@@ -54349,7 +54351,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 33554431
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
